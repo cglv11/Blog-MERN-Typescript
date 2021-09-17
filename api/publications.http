@@ -1,0 +1,27 @@
+
+### getting videos
+GET http://localhost:4000/publications
+
+###
+GET http://localhost:4000/publications/60fc55024d2098191cc23f23
+
+###
+POST http://localhost:4000/publications
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=UipIQ81kabs&list=LL&index=2&ab_channel=FaztCode",
+    "title": "another fazt video2",
+    "description": "this is a video 2"
+}
+
+###
+DELETE http://localhost:4000/publications/60fc571b170c140f484ae3f4
+
+###
+PUT http://localhost:4000/publications/60fdad16f415613234d19485
+Content-Type: application/json
+
+{
+    "title": "another jojo fazt video"
+}
